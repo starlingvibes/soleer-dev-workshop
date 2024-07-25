@@ -10,7 +10,7 @@ dotenv.config();
   console.log(publicKey);
   console.log(privateKey);
   const myAddress = new PublicKey(publicKey);
-  const tx = await connection.requestAirdrop(myAddress, LAMPORTS_PER_SOL * 0.1);
+  const tx = await connection.requestAirdrop(myAddress, LAMPORTS_PER_SOL * 10);
   const signature = await connection.confirmTransaction(tx);
   console.log(signature);
 })();
