@@ -4,3 +4,4 @@ node_modules
 main.exe
 main.pdb
 rust-primer/target
+metaplex-token-program/build
